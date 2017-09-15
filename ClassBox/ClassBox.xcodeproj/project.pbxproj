@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16487A611F6C124B0045D2C8 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A601F6C124B0045D2C8 /* BaseTableViewController.m */; };
+		16487A641F6C12940045D2C8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A631F6C12940045D2C8 /* MessageViewController.m */; };
+		16487A671F6C17170045D2C8 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A661F6C17170045D2C8 /* MeViewController.m */; };
+		16487A6B1F6C1DBE0045D2C8 /* MeHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A691F6C1DBE0045D2C8 /* MeHeadTableViewCell.m */; };
+		16487A6C1F6C1DBE0045D2C8 /* MeHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16487A6A1F6C1DBE0045D2C8 /* MeHeadTableViewCell.xib */; };
+		16487A801F6C214A0045D2C8 /* AutoFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A751F6C214A0045D2C8 /* AutoFontLabel.m */; };
+		16487A811F6C214A0045D2C8 /* AutoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A781F6C214A0045D2C8 /* AutoTextField.m */; };
+		16487A821F6C214A0045D2C8 /* AutoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A7B1F6C214A0045D2C8 /* AutoTextView.m */; };
+		16487A831F6C214A0045D2C8 /* AutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A7E1F6C214A0045D2C8 /* AutoView.m */; };
 		168BE21F1F6B715E0020B538 /* QConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE21E1F6B715E0020B538 /* QConstant.m */; };
 		168BE2461F6B78360020B538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2431F6B78360020B538 /* AppDelegate.m */; };
 		168BE2471F6B78360020B538 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2451F6B78360020B538 /* MainTabBarViewController.m */; };
@@ -18,6 +27,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16487A5F1F6C124B0045D2C8 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		16487A601F6C124B0045D2C8 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		16487A621F6C12940045D2C8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		16487A631F6C12940045D2C8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		16487A651F6C17170045D2C8 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		16487A661F6C17170045D2C8 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		16487A681F6C1DBE0045D2C8 /* MeHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeHeadTableViewCell.h; sourceTree = "<group>"; };
+		16487A691F6C1DBE0045D2C8 /* MeHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeHeadTableViewCell.m; sourceTree = "<group>"; };
+		16487A6A1F6C1DBE0045D2C8 /* MeHeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeadTableViewCell.xib; sourceTree = "<group>"; };
+		16487A711F6C214A0045D2C8 /* AutoFontButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoFontButton.h; sourceTree = "<group>"; };
+		16487A721F6C214A0045D2C8 /* AutoFontButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoFontButton.m; sourceTree = "<group>"; };
+		16487A741F6C214A0045D2C8 /* AutoFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoFontLabel.h; sourceTree = "<group>"; };
+		16487A751F6C214A0045D2C8 /* AutoFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoFontLabel.m; sourceTree = "<group>"; };
+		16487A771F6C214A0045D2C8 /* AutoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTextField.h; sourceTree = "<group>"; };
+		16487A781F6C214A0045D2C8 /* AutoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTextField.m; sourceTree = "<group>"; };
+		16487A7A1F6C214A0045D2C8 /* AutoTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTextView.h; sourceTree = "<group>"; };
+		16487A7B1F6C214A0045D2C8 /* AutoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTextView.m; sourceTree = "<group>"; };
+		16487A7D1F6C214A0045D2C8 /* AutoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoView.h; sourceTree = "<group>"; };
+		16487A7E1F6C214A0045D2C8 /* AutoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoView.m; sourceTree = "<group>"; };
 		168BE21A1F6B6EB40020B538 /* app.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.pch; sourceTree = "<group>"; };
 		168BE21D1F6B715E0020B538 /* QConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QConstant.h; sourceTree = "<group>"; };
 		168BE21E1F6B715E0020B538 /* QConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QConstant.m; sourceTree = "<group>"; };
@@ -49,6 +77,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16487A6D1F6C21020045D2C8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				16487A6F1F6C214A0045D2C8 /* Auto */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		16487A6F1F6C214A0045D2C8 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				16487A701F6C214A0045D2C8 /* AutoFontButton */,
+				16487A731F6C214A0045D2C8 /* AutoFontLabel */,
+				16487A761F6C214A0045D2C8 /* AutoTextFiled */,
+				16487A791F6C214A0045D2C8 /* AutoTextView */,
+				16487A7C1F6C214A0045D2C8 /* AutoView */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		16487A701F6C214A0045D2C8 /* AutoFontButton */ = {
+			isa = PBXGroup;
+			children = (
+				16487A711F6C214A0045D2C8 /* AutoFontButton.h */,
+				16487A721F6C214A0045D2C8 /* AutoFontButton.m */,
+			);
+			path = AutoFontButton;
+			sourceTree = "<group>";
+		};
+		16487A731F6C214A0045D2C8 /* AutoFontLabel */ = {
+			isa = PBXGroup;
+			children = (
+				16487A741F6C214A0045D2C8 /* AutoFontLabel.h */,
+				16487A751F6C214A0045D2C8 /* AutoFontLabel.m */,
+			);
+			path = AutoFontLabel;
+			sourceTree = "<group>";
+		};
+		16487A761F6C214A0045D2C8 /* AutoTextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				16487A771F6C214A0045D2C8 /* AutoTextField.h */,
+				16487A781F6C214A0045D2C8 /* AutoTextField.m */,
+			);
+			path = AutoTextFiled;
+			sourceTree = "<group>";
+		};
+		16487A791F6C214A0045D2C8 /* AutoTextView */ = {
+			isa = PBXGroup;
+			children = (
+				16487A7A1F6C214A0045D2C8 /* AutoTextView.h */,
+				16487A7B1F6C214A0045D2C8 /* AutoTextView.m */,
+			);
+			path = AutoTextView;
+			sourceTree = "<group>";
+		};
+		16487A7C1F6C214A0045D2C8 /* AutoView */ = {
+			isa = PBXGroup;
+			children = (
+				16487A7D1F6C214A0045D2C8 /* AutoView.h */,
+				16487A7E1F6C214A0045D2C8 /* AutoView.m */,
+			);
+			path = AutoView;
+			sourceTree = "<group>";
+		};
 		168BE21B1F6B70D40020B538 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +223,8 @@
 		168BE22E1F6B77230020B538 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16487A621F6C12940045D2C8 /* MessageViewController.h */,
+				16487A631F6C12940045D2C8 /* MessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,6 +330,9 @@
 		168BE23D1F6B778D0020B538 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				16487A681F6C1DBE0045D2C8 /* MeHeadTableViewCell.h */,
+				16487A691F6C1DBE0045D2C8 /* MeHeadTableViewCell.m */,
+				16487A6A1F6C1DBE0045D2C8 /* MeHeadTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -249,6 +347,8 @@
 		168BE23F1F6B778D0020B538 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16487A651F6C17170045D2C8 /* MeViewController.h */,
+				16487A661F6C17170045D2C8 /* MeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +378,7 @@
 				16D0FCFC1F6AAFF2002B8766 /* Base */,
 				16D0FCE41F6AAEE8002B8766 /* ClassBox */,
 				16D0FCFF1F6AAFF2002B8766 /* Resource */,
+				16487A6D1F6C21020045D2C8 /* Component */,
 				168BE21C1F6B70EE0020B538 /* Constant */,
 				168BE21B1F6B70D40020B538 /* Utils */,
 				16D0FD051F6AAFF2002B8766 /* Supporting Files */,
@@ -312,6 +413,8 @@
 			children = (
 				16D0FCFD1F6AAFF2002B8766 /* BaseViewController.h */,
 				16D0FCFE1F6AAFF2002B8766 /* BaseViewController.m */,
+				16487A5F1F6C124B0045D2C8 /* BaseTableViewController.h */,
+				16487A601F6C124B0045D2C8 /* BaseTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -413,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16487A6C1F6C1DBE0045D2C8 /* MeHeadTableViewCell.xib in Resources */,
 				16D0FD091F6AAFF2002B8766 /* Assets.xcassets in Resources */,
 				16D0FD0A1F6AAFF2002B8766 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -474,10 +578,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				168BE2471F6B78360020B538 /* MainTabBarViewController.m in Sources */,
+				16487A831F6C214A0045D2C8 /* AutoView.m in Sources */,
 				16D0FD081F6AAFF2002B8766 /* BaseViewController.m in Sources */,
 				168BE2461F6B78360020B538 /* AppDelegate.m in Sources */,
+				16487A6B1F6C1DBE0045D2C8 /* MeHeadTableViewCell.m in Sources */,
+				16487A821F6C214A0045D2C8 /* AutoTextView.m in Sources */,
+				16487A811F6C214A0045D2C8 /* AutoTextField.m in Sources */,
 				16D0FD0D1F6AAFF2002B8766 /* main.m in Sources */,
+				16487A611F6C124B0045D2C8 /* BaseTableViewController.m in Sources */,
 				168BE21F1F6B715E0020B538 /* QConstant.m in Sources */,
+				16487A671F6C17170045D2C8 /* MeViewController.m in Sources */,
+				16487A641F6C12940045D2C8 /* MessageViewController.m in Sources */,
+				16487A801F6C214A0045D2C8 /* AutoFontLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,12 +705,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/mac/Documents/Projects/ClassesBox/ClassBox/Supporting Files/app.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/app.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cgy.ClassBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -608,12 +721,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/mac/Documents/Projects/ClassesBox/ClassBox/Supporting Files/app.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/app.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cgy.ClassBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
