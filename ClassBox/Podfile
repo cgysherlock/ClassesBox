@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+ 
+target ‘ClassBox’ do
+
+pod 'MBProgressHUD'
+
+pod 'MJExtension'
+
+pod 'AFNetworking'
+
+pod 'SDWebImage'
+
+pod 'MBProgressHUD'
+
+pod 'Masonry', '1.0.2'
+
+end
