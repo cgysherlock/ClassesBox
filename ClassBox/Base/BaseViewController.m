@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    S_WIDTH;
 }
 
 - (void)didReceiveMemoryWarning {

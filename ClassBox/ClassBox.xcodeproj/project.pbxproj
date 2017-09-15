@@ -13,7 +13,6 @@
 		16D0FD081F6AAFF2002B8766 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D0FCFE1F6AAFF2002B8766 /* BaseViewController.m */; };
 		16D0FD091F6AAFF2002B8766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D0FD001F6AAFF2002B8766 /* Assets.xcassets */; };
 		16D0FD0A1F6AAFF2002B8766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D0FD011F6AAFF2002B8766 /* LaunchScreen.storyboard */; };
-		16D0FD0C1F6AAFF2002B8766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D0FD061F6AAFF2002B8766 /* Info.plist */; };
 		16D0FD0D1F6AAFF2002B8766 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D0FD071F6AAFF2002B8766 /* main.m */; };
 		F542DE8C2076B350D366C942 /* libPods-ClassBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E10210DB00390A3E34C4E6 /* libPods-ClassBox.a */; };
 /* End PBXBuildFile section */
@@ -414,7 +413,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16D0FD0C1F6AAFF2002B8766 /* Info.plist in Resources */,
 				16D0FD091F6AAFF2002B8766 /* Assets.xcassets in Resources */,
 				16D0FD0A1F6AAFF2002B8766 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -594,6 +592,7 @@
 			baseConfigurationReference = 9538ECBAAB25073618967C48 /* Pods-ClassBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/mac/Documents/Projects/ClassesBox/ClassBox/Supporting Files/app.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -608,6 +607,7 @@
 			baseConfigurationReference = CA3599F5288E98621C8B982F /* Pods-ClassBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/mac/Documents/Projects/ClassesBox/ClassBox/Supporting Files/app.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

@@ -19,9 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     MainTabBarViewController *mainVc = [[MainTabBarViewController alloc] init];
-    
+
     self.window.rootViewController = mainVc;
     
     [self.window makeKeyAndVisible];
