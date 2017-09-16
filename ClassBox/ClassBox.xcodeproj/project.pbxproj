@@ -18,6 +18,9 @@
 		16487A831F6C214A0045D2C8 /* AutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A7E1F6C214A0045D2C8 /* AutoView.m */; };
 		164B881F1F6CA02300639B7A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B881E1F6CA02300639B7A /* BaseNavigationController.m */; };
 		164B88221F6CB2C100639B7A /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B88211F6CB2C100639B7A /* DiscoverViewController.m */; };
+		164B88251F6CC87100639B7A /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B88241F6CC87100639B7A /* MainTabBar.m */; };
+		164B882E1F6CCAC700639B7A /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B882D1F6CCAC700639B7A /* PublishViewController.m */; };
+		164B88391F6CCCB300639B7A /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B88381F6CCCB300639B7A /* TimeTableViewController.m */; };
 		168BE21F1F6B715E0020B538 /* QConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE21E1F6B715E0020B538 /* QConstant.m */; };
 		168BE2461F6B78360020B538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2431F6B78360020B538 /* AppDelegate.m */; };
 		168BE2471F6B78360020B538 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2451F6B78360020B538 /* MainTabBarViewController.m */; };
@@ -52,6 +55,12 @@
 		164B881E1F6CA02300639B7A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		164B88201F6CB2C100639B7A /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		164B88211F6CB2C100639B7A /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		164B88231F6CC87100639B7A /* MainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
+		164B88241F6CC87100639B7A /* MainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		164B882C1F6CCAC700639B7A /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		164B882D1F6CCAC700639B7A /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		164B88371F6CCCB300639B7A /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		164B88381F6CCCB300639B7A /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
 		168BE21A1F6B6EB40020B538 /* app.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.pch; sourceTree = "<group>"; };
 		168BE21D1F6B715E0020B538 /* QConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QConstant.h; sourceTree = "<group>"; };
 		168BE21E1F6B715E0020B538 /* QConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QConstant.m; sourceTree = "<group>"; };
@@ -148,6 +157,47 @@
 			path = AutoView;
 			sourceTree = "<group>";
 		};
+		164B882F1F6CCC0200639B7A /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				164B88331F6CCC9B00639B7A /* Cell */,
+				164B88341F6CCC9B00639B7A /* Component */,
+				164B88351F6CCC9B00639B7A /* Controller */,
+				164B88361F6CCC9B00639B7A /* Model */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		164B88331F6CCC9B00639B7A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		164B88341F6CCC9B00639B7A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		164B88351F6CCC9B00639B7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				164B88371F6CCCB300639B7A /* TimeTableViewController.h */,
+				164B88381F6CCCB300639B7A /* TimeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		164B88361F6CCC9B00639B7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		168BE21B1F6B70D40020B538 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,17 +212,6 @@
 				168BE21E1F6B715E0020B538 /* QConstant.m */,
 			);
 			path = Constant;
-			sourceTree = "<group>";
-		};
-		168BE2261F6B740A0020B538 /* TimeTable */ = {
-			isa = PBXGroup;
-			children = (
-				168BE2311F6B77750020B538 /* Cell */,
-				168BE2321F6B77750020B538 /* Component */,
-				168BE2331F6B77750020B538 /* Controller */,
-				168BE2341F6B77750020B538 /* Model */,
-			);
-			path = TimeTable;
 			sourceTree = "<group>";
 		};
 		168BE2271F6B741E0020B538 /* Discover */ = {
@@ -249,34 +288,6 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		168BE2311F6B77750020B538 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		168BE2321F6B77750020B538 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		168BE2331F6B77750020B538 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		168BE2341F6B77750020B538 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		168BE2351F6B777E0020B538 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +335,8 @@
 		168BE23B1F6B77860020B538 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				164B882C1F6CCAC700639B7A /* PublishViewController.h */,
+				164B882D1F6CCAC700639B7A /* PublishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -371,6 +384,8 @@
 		168BE2411F6B77C00020B538 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				164B88231F6CC87100639B7A /* MainTabBar.h */,
+				164B88241F6CC87100639B7A /* MainTabBar.m */,
 				168BE2421F6B78360020B538 /* AppDelegate.h */,
 				168BE2431F6B78360020B538 /* AppDelegate.m */,
 				168BE2441F6B78360020B538 /* MainTabBarViewController.h */,
@@ -407,8 +422,8 @@
 		16D0FCE41F6AAEE8002B8766 /* ClassBox */ = {
 			isa = PBXGroup;
 			children = (
+				164B882F1F6CCC0200639B7A /* TimeTable */,
 				168BE2291F6B743D0020B538 /* Message */,
-				168BE2261F6B740A0020B538 /* TimeTable */,
 				168BE2271F6B741E0020B538 /* Discover */,
 				168BE2281F6B74300020B538 /* Publish */,
 				168BE22A1F6B744C0020B538 /* Me */,
@@ -590,11 +605,14 @@
 				168BE2471F6B78360020B538 /* MainTabBarViewController.m in Sources */,
 				16487A831F6C214A0045D2C8 /* AutoView.m in Sources */,
 				16D0FD081F6AAFF2002B8766 /* BaseViewController.m in Sources */,
+				164B882E1F6CCAC700639B7A /* PublishViewController.m in Sources */,
 				168BE2461F6B78360020B538 /* AppDelegate.m in Sources */,
 				16487A6B1F6C1DBE0045D2C8 /* MeHeadTableViewCell.m in Sources */,
 				16487A821F6C214A0045D2C8 /* AutoTextView.m in Sources */,
 				16487A811F6C214A0045D2C8 /* AutoTextField.m in Sources */,
 				16D0FD0D1F6AAFF2002B8766 /* main.m in Sources */,
+				164B88251F6CC87100639B7A /* MainTabBar.m in Sources */,
+				164B88391F6CCCB300639B7A /* TimeTableViewController.m in Sources */,
 				164B881F1F6CA02300639B7A /* BaseNavigationController.m in Sources */,
 				16487A611F6C124B0045D2C8 /* BaseTableViewController.m in Sources */,
 				164B88221F6CB2C100639B7A /* DiscoverViewController.m in Sources */,

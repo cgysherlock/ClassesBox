@@ -12,6 +12,7 @@
 #import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
 #import "MainTabBar.h"
+#import "TimeTableViewController.h"
 #import "PublishViewController.h"
 #import "DiscoverViewController.h"
 
@@ -45,9 +46,9 @@
     
        
     MessageViewController *msgvc = [[MessageViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self initTabBarItem:msgvc.tabBarItem Title:@"消息" SelectedImage:@"" UnselectedImage:@""];
+    [self initTabBarItem:msgvc.tabBarItem Title:@"消息" SelectedImage:@"tabBar_me_icon" UnselectedImage:@"tabBar_me_click_icon"];
     msgvc.title = @"消息";
-    BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
+    BaseNavigationController *basevc4 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
     
  
     
