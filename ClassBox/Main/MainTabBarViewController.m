@@ -13,8 +13,9 @@
 #import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
 #import "MainTabBar.h"
+#import "PublishViewController.h"
 
-@interface MainTabBarViewController ()
+@interface MainTabBarViewController ()<MainTabBarDelegate>
 
 @end
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
 
     MainTabBar *tabBar = [[MainTabBar alloc] init];
+    tabBar.mainTabBarDelegate = self;
     [self setValue:tabBar forKey:@"tabBar"];
 
     TimeTableViewController *ttVc = [[TimeTableViewController alloc] init];
@@ -60,4 +62,10 @@
             [UIFont systemFontOfSize:TABBER_TITLE_FONT], NSForegroundColorAttributeName: RGB(64, 64, 64, 1)} forState:UIControlStateSelected];//设置选中时的字体大小和颜色
 }
 
+
+#pragma mark - MainTabBarDelegate
+- (void)centerButtonCLick {
+    PublishViewController *publishVC = [[PublishViewController alloc] init];
+    [self presentViewController:publishVC animated:YES completion:nil];
+}
 @end
