@@ -24,8 +24,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     MainTabBarViewController *mainVc = [[MainTabBarViewController alloc] init];
-    
-    [self initMainVC:mainVc];
 
     self.window.rootViewController = mainVc;
     
@@ -63,9 +61,6 @@
 
 #pragma mark custom function
 
-- (void)initMainVC:(MainTabBarViewController *)mainVC {
-    
-}
 
 
 @end

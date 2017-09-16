@@ -16,6 +16,7 @@
 		16487A811F6C214A0045D2C8 /* AutoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A781F6C214A0045D2C8 /* AutoTextField.m */; };
 		16487A821F6C214A0045D2C8 /* AutoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A7B1F6C214A0045D2C8 /* AutoTextView.m */; };
 		16487A831F6C214A0045D2C8 /* AutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16487A7E1F6C214A0045D2C8 /* AutoView.m */; };
+		164B881F1F6CA02300639B7A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B881E1F6CA02300639B7A /* BaseNavigationController.m */; };
 		168BE21F1F6B715E0020B538 /* QConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE21E1F6B715E0020B538 /* QConstant.m */; };
 		168BE2461F6B78360020B538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2431F6B78360020B538 /* AppDelegate.m */; };
 		168BE2471F6B78360020B538 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BE2451F6B78360020B538 /* MainTabBarViewController.m */; };
@@ -46,6 +47,8 @@
 		16487A7B1F6C214A0045D2C8 /* AutoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTextView.m; sourceTree = "<group>"; };
 		16487A7D1F6C214A0045D2C8 /* AutoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoView.h; sourceTree = "<group>"; };
 		16487A7E1F6C214A0045D2C8 /* AutoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoView.m; sourceTree = "<group>"; };
+		164B881D1F6CA02300639B7A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		164B881E1F6CA02300639B7A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		168BE21A1F6B6EB40020B538 /* app.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.pch; sourceTree = "<group>"; };
 		168BE21D1F6B715E0020B538 /* QConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QConstant.h; sourceTree = "<group>"; };
 		168BE21E1F6B715E0020B538 /* QConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QConstant.m; sourceTree = "<group>"; };
@@ -415,6 +418,8 @@
 				16D0FCFE1F6AAFF2002B8766 /* BaseViewController.m */,
 				16487A5F1F6C124B0045D2C8 /* BaseTableViewController.h */,
 				16487A601F6C124B0045D2C8 /* BaseTableViewController.m */,
+				164B881D1F6CA02300639B7A /* BaseNavigationController.h */,
+				164B881E1F6CA02300639B7A /* BaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				16487A821F6C214A0045D2C8 /* AutoTextView.m in Sources */,
 				16487A811F6C214A0045D2C8 /* AutoTextField.m in Sources */,
 				16D0FD0D1F6AAFF2002B8766 /* main.m in Sources */,
+				164B881F1F6CA02300639B7A /* BaseNavigationController.m in Sources */,
 				16487A611F6C124B0045D2C8 /* BaseTableViewController.m in Sources */,
 				168BE21F1F6B715E0020B538 /* QConstant.m in Sources */,
 				16487A671F6C17170045D2C8 /* MeViewController.m in Sources */,
