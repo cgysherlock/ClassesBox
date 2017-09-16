@@ -10,6 +10,7 @@
 #import "MeViewController.h"
 #import "MessageViewController.h"
 #import "BaseNavigationController.h"
+#import "DiscoverViewController.h"
 
 @interface MainTabBarViewController ()
 
@@ -19,15 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MeViewController *mvc = [[MeViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self initTabBarItem:mvc.tabBarItem Title:@"消息" SelectedImage:@"" UnselectedImage:@""];
-    BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:mvc];
+    
+    DiscoverViewController *dvc = [[DiscoverViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self initTabBarItem:dvc.tabBarItem Title:@"发现" SelectedImage:@"" UnselectedImage:@""];
+    dvc.title = @"发现";
+    BaseNavigationController *basevc2 = [[BaseNavigationController alloc] initWithRootViewController:dvc];
     
     MessageViewController *msgvc = [[MessageViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self initTabBarItem:msgvc.tabBarItem Title:@"我" SelectedImage:@"" UnselectedImage:@""];
-    BaseNavigationController *basevc4 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
+    [self initTabBarItem:msgvc.tabBarItem Title:@"消息" SelectedImage:@"" UnselectedImage:@""];
+    msgvc.title = @"消息";
+    BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
     
-    self.viewControllers = @[basevc3,basevc4];
+    MeViewController *mvc = [[MeViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [self initTabBarItem:mvc.tabBarItem Title:@"我" SelectedImage:@"" UnselectedImage:@""];
+    mvc.title = @"我";
+    BaseNavigationController *basevc4 = [[BaseNavigationController alloc] initWithRootViewController:mvc];
+    
+    self.viewControllers = @[basevc2,basevc3,basevc4];
 }
 
 - (void)initTabBarItem:(UITabBarItem *)tabBarItem Title:(NSString*)title SelectedImage:(NSString*)selectedImage UnselectedImage:(NSString*)unselectedImage {
