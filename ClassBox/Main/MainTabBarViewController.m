@@ -9,7 +9,6 @@
 #import "MainTabBarViewController.h"
 #import "MeViewController.h"
 #import "MessageViewController.h"
-#import "TimeTableViewController.h"
 #import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
 #import "DiscoverViewController.h"
