@@ -9,11 +9,11 @@
 #import "MainTabBarViewController.h"
 #import "MeViewController.h"
 #import "MessageViewController.h"
-#import "TimeTableViewController.h"
 #import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
 #import "MainTabBar.h"
 #import "PublishViewController.h"
+#import "DiscoverViewController.h"
 
 @interface MainTabBarViewController ()<MainTabBarDelegate>
 
@@ -39,14 +39,17 @@
     BaseNavigationController *bassVc2 = [[BaseNavigationController alloc] initWithRootViewController:dVc];
 
     MeViewController *mvc = [[MeViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [mvc setTitle:@"信息"];
+    [mvc setTitle:@"我"];
     [self initTabBarItem:mvc.tabBarItem Title:@"消息" SelectedImage:@"tabBar_new_icon" UnselectedImage:@"tabBar_new_click_icon"];
     BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:mvc];
     
+       
     MessageViewController *msgvc = [[MessageViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [msgvc setTitle:@"我"];
-    [self initTabBarItem:msgvc.tabBarItem Title:@"我" SelectedImage:@"tabBar_me_icon" UnselectedImage:@"tabBar_me_click_icon"];
-    BaseNavigationController *basevc4 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
+    [self initTabBarItem:msgvc.tabBarItem Title:@"消息" SelectedImage:@"" UnselectedImage:@""];
+    msgvc.title = @"消息";
+    BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
+    
+ 
     
     self.viewControllers = @[baseVC1,bassVc2,basevc3,basevc4];
 }

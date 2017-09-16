@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.separatorInset = UIEdgeInsetsZero;
 }
 
 #pragma mark delegate

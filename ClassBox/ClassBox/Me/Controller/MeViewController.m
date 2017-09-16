@@ -7,6 +7,8 @@
 //
 
 #import "MeViewController.h"
+#import "MeHeadTableViewCell.h"
+#import "Masonry.h"
 
 @interface MeViewController ()
 
@@ -18,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.tableFooterView = [self createFooterView];
+    self.tableView.separatorInset = UIEdgeInsetsZero;
 }
 
 #pragma mark delegate
@@ -49,7 +53,7 @@
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     if (section == 0) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        MeHeadTableViewCell * cell=[[NSBundle mainBundle] loadNibNamed:@"MeHeadTableViewCell" owner:self options:nil].lastObject;
         return cell;
     }else if(section == 1) {
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
@@ -81,6 +85,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UIView *)createFooterView {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"退出登录" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    button.layer.borderWidth = 1.0f;
+    button.layer.cornerRadius = 5.0f;
+    button.layer.borderColor = [UIColor redColor].CGColor;
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, S_WIDTH, 64)];
+    [footerView addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.insets(UIEdgeInsetsMake(0, 20, 0, 20));
+    }];
+    return footerView;
 }
 
 @end
