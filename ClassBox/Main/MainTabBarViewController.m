@@ -9,6 +9,8 @@
 #import "MainTabBarViewController.h"
 #import "MeViewController.h"
 #import "MessageViewController.h"
+#import "TimeTableViewController.h"
+#import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
 #import "DiscoverViewController.h"
 
@@ -45,13 +47,9 @@
     [tabBarItem setImage:[[UIImage imageNamed:unselectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];//设置未选中时的图片
     
     [tabBarItem setSelectedImage:[[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];//设置选中时的图片
-    [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                        [UIFont systemFontOfSize:TABBER_TITLE_FONT], NSFontAttributeName,RGB(0x46, 0x46, 0x46, 1),NSForegroundColorAttributeName,
-                                        nil] forState:UIControlStateNormal];//设置未选中时的字体大小和颜色
-    [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                        [UIFont systemFontOfSize:TABBER_TITLE_FONT],
-                                        NSFontAttributeName,[UIColor blueColor],NSForegroundColorAttributeName,
-                                        nil] forState:UIControlStateSelected];//设置选中时的字体大小和颜色
+    [tabBarItem setTitleTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:TABBER_TITLE_FONT], NSForegroundColorAttributeName: RGB(0x46, 0x46, 0x46, 1)} forState:UIControlStateNormal];//设置未选中时的字体大小和颜色
+    [tabBarItem                                                                                 setTitleTextAttributes:@{NSFontAttributeName:
+            [UIFont systemFontOfSize:TABBER_TITLE_FONT], NSForegroundColorAttributeName: RGB(64, 64, 64, 1)} forState:UIControlStateSelected];//设置选中时的字体大小和颜色
 }
 
 @end
