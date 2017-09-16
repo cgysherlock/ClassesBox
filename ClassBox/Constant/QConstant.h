@@ -47,7 +47,7 @@
 
 ///设置颜色
 #define RGB(r, g, b, f) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:f/1.0f]
-#define RGB_COLOR(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1/1.0f]]
+#define RGB_COLOR(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1/1.0f]
 
 //----------------------------------------------判断设备
 ///是否是pad
