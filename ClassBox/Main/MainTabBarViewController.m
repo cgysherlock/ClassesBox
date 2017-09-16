@@ -11,9 +11,11 @@
 #import "MessageViewController.h"
 #import "DiscoverViewController.h"
 #import "BaseNavigationController.h"
+#import "MainTabBar.h"
+#import "PublishViewController.h"
 #import "DiscoverViewController.h"
 
-@interface MainTabBarViewController ()
+@interface MainTabBarViewController ()<MainTabBarDelegate>
 
 @end
 
@@ -21,23 +23,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    MainTabBar *tabBar = [[MainTabBar alloc] init];
+    tabBar.mainTabBarDelegate = self;
+    [self setValue:tabBar forKey:@"tabBar"];
+
+    TimeTableViewController *ttVc = [[TimeTableViewController alloc] init];
+    [ttVc setTitle:@"课表"];
+    [self initTabBarItem:ttVc.tabBarItem Title:@"课表" SelectedImage:@"tabBar_essence_icon" UnselectedImage:@"tabBar_essence_click_icon"];
+    BaseNavigationController *baseVC1 = [[BaseNavigationController alloc] initWithRootViewController:ttVc];
+
+    DiscoverViewController *dVc = [[DiscoverViewController alloc] init];
+    [dVc setTitle:@"发现"];
+    [self initTabBarItem:dVc.tabBarItem Title:@"发现" SelectedImage:@"tabBar_friendTrends_icon" UnselectedImage:@"tabBar_friendTrends_click_icon"];
+    BaseNavigationController *bassVc2 = [[BaseNavigationController alloc] initWithRootViewController:dVc];
+
+    MeViewController *mvc = [[MeViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [mvc setTitle:@"我"];
+    [self initTabBarItem:mvc.tabBarItem Title:@"消息" SelectedImage:@"tabBar_new_icon" UnselectedImage:@"tabBar_new_click_icon"];
+    BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:mvc];
     
-    DiscoverViewController *dvc = [[DiscoverViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self initTabBarItem:dvc.tabBarItem Title:@"发现" SelectedImage:@"" UnselectedImage:@""];
-    dvc.title = @"发现";
-    BaseNavigationController *basevc2 = [[BaseNavigationController alloc] initWithRootViewController:dvc];
-    
+       
     MessageViewController *msgvc = [[MessageViewController alloc] initWithStyle:UITableViewStyleGrouped];
     [self initTabBarItem:msgvc.tabBarItem Title:@"消息" SelectedImage:@"" UnselectedImage:@""];
     msgvc.title = @"消息";
     BaseNavigationController *basevc3 = [[BaseNavigationController alloc] initWithRootViewController:msgvc];
     
-    MeViewController *mvc = [[MeViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self initTabBarItem:mvc.tabBarItem Title:@"我" SelectedImage:@"" UnselectedImage:@""];
-    mvc.title = @"我";
-    BaseNavigationController *basevc4 = [[BaseNavigationController alloc] initWithRootViewController:mvc];
+ 
     
-    self.viewControllers = @[basevc2,basevc3,basevc4];
+    self.viewControllers = @[baseVC1,bassVc2,basevc3,basevc4];
 }
 
 - (void)initTabBarItem:(UITabBarItem *)tabBarItem Title:(NSString*)title SelectedImage:(NSString*)selectedImage UnselectedImage:(NSString*)unselectedImage {
@@ -51,4 +65,10 @@
             [UIFont systemFontOfSize:TABBER_TITLE_FONT], NSForegroundColorAttributeName: RGB(64, 64, 64, 1)} forState:UIControlStateSelected];//设置选中时的字体大小和颜色
 }
 
+
+#pragma mark - MainTabBarDelegate
+- (void)centerButtonCLick {
+    PublishViewController *publishVC = [[PublishViewController alloc] init];
+    [self presentViewController:publishVC animated:YES completion:nil];
+}
 @end

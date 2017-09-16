@@ -15,8 +15,8 @@
     if (self = [super initWithFrame:frame]) {
         UIButton *composeButton = [[UIButton alloc] init];
         [composeButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+        [composeButton addTarget:self action:@selector(centerButtonClick) forControlEvents:UIControlEventTouchUpInside];
         [composeButton sizeToFit];
-        //composeButton.frame.origin = CGPointMake((S_WIDTH - composeButton.bounds.size.width)/2, (49 - composeButton.bounds.size.height)/2);
         [self addSubview:composeButton];
         [composeButton mas_makeConstraints:^(MASConstraintMaker *make) {
            make.center.mas_equalTo(self);
@@ -31,12 +31,6 @@
     for (int i = 0; i < self.subviews.count; ++i) {
         if (i > 1) {
             CGRect frame = self.subviews[i].frame;
-//            if (i < 4) {
-//                frame.origin.x -= 10;
-//            } else {
-//                frame.origin.x += 10;
-//            }
-
             switch (i) {
                 case 2:{
                     frame.origin.x -=10;
@@ -60,6 +54,12 @@
 
             self.subviews[i].frame = frame;
         }
+    }
+}
+
+- (void)centerButtonClick {
+    if (_mainTabBarDelegate){
+        [_mainTabBarDelegate centerButtonCLick];
     }
 }
 @end

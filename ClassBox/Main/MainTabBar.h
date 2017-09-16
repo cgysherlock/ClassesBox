@@ -9,6 +9,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTabBar : UITabBar 
+@protocol MainTabBarDelegate<NSObject>
+
+- (void)centerButtonCLick;
+
+@end
+
+@interface MainTabBar : UITabBar
+
+@property (nonatomic, weak)id<MainTabBarDelegate> mainTabBarDelegate;
 
 @end
