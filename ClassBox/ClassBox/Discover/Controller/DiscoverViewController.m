@@ -36,7 +36,7 @@
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, S_WIDTH, 49)];
     
-    UIButton *button0 = [self createButtonWithTitle:@"班级笔记"];
+//    UIButton *button0 = [self createButtonWithTitle:@"班级笔记"];
     
     return view;
 }
